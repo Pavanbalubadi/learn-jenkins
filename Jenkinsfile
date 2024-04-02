@@ -28,24 +28,18 @@ pipeline {
                 echo 'Hello Pavan'
             }
         }
-    }
-
-    stages {
-            stage('pavan') {
-
-                steps {
-                    echo 'Hello Pavan'
-                }
-            }
-        }
-
-        stages {
-                stage('balubadi') {
+        stage('pavan') {
                     steps {
                         echo 'Hello Pavan'
                     }
                 }
-            }
+        stage('kumar') {
+                       steps {
+                            echo 'Hello Pavan'
+                        }
+    }
+
+
 }
 
 
