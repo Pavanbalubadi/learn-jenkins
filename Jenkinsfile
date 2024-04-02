@@ -1,7 +1,7 @@
 // Jenkinsfile (Declarative Pipeline)
 
 pipeline {
-    agent any
+    agent node { lable 'workstation'}
 
     stages {
         stage('Hello') {
