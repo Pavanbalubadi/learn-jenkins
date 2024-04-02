@@ -1,9 +1,10 @@
 pipeline {
-    agent { docker { image 'maven:3.9.6-eclipse-temurin-17-alpine' } }
+    agent { node { label 'workstation' } }
     stages {
-        stage('build') {
+        stage('pavan') {
+          echo 'Hello Pavan'
             steps {
-                sh 'mvn --version'
+                sh 'env'
             }
         }
     }
