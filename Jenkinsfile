@@ -33,7 +33,7 @@ pipeline {
                         echo 'Hello Pavan'
                     }
                 }
-        stage('kumar') {
+        stage('Balubadi') {
                        steps {
                             echo 'Hello Pavan'
                         }
