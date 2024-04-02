@@ -16,30 +16,30 @@
 
 pipeline {
    agent { node { label 'workstation' } }
-     options {
-           ansiColor('xterm')
-       }
-    stages {
-        stage('Hello') {
-        when {
-                branch 'production'
-              }
-            steps {
-                echo 'Hello Pavan'
-            }
-        }
-        stage('pavan') {
-                    steps {
-                        echo 'Hello Pavan'
-                    }
-                }
-        stage('Balubadi') {
-                       steps {
-                            echo 'Hello Pavan'
-                        }
+    options {
+      ansiColor('xterm')
+  stages {
+    stage('pavan') {
+      when {
+        branch 'production'
+      }
+      steps {
+        echo 'Deploying'
+      }
     }
 
+    stage('kumar') {
+      steps {
+        echo 'Deploying'
+      }
+    }
+    stage('balubadi') {
+          steps {
+            echo 'Deploying'
+          }
+        }
 
+  }
 }
 
 
