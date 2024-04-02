@@ -1,11 +1,12 @@
 ## Jenkinsfile (Declarative Pipeline)
+
 pipeline {
-    agent { node { label 'workstation' } }
+    agent any
+
     stages {
-        stage('pavan') {
-          echo 'Hello Pavan'
+        stage('Hello') {
             steps {
-                sh 'env'
+                echo 'Hello Pavan'
             }
         }
     }
