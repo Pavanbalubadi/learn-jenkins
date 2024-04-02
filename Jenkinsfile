@@ -2,6 +2,9 @@
 
 pipeline {
     agent node { lable 'workstation'}
+    options {
+      ansiColor('xterm')
+    }
 
     stages {
         stage('Hello') {
